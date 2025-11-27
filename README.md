@@ -23,15 +23,15 @@ Using **Random Forest Classifiers** and **TF-IDF Vectorization**, the models ach
 ## 📊 Methodology & Results
 
 ### 1. English Pipeline
-* [cite_start]**Dataset:** Utilized the "Training_Essay_Data" dataset containing human and AI-generated essays.
-* [cite_start]**Preprocessing:** Lowercased text and applied **Random Undersampling** to balance the majority class (Human) with the minority class (AI).
-* [cite_start]**Features:** Implemented `TfidfVectorizer` (capped at 1000 features) to reduce dimensionality.
-* [cite_start]**Model:** Random Forest Classifier (`n_estimators=500`, `class_weight='balanced'`).
+* [cite_start] **Dataset:** Utilized the "Training_Essay_Data" dataset containing human and AI-generated essays.
+* [cite_start] **Preprocessing:** Lowercased text and applied **Random Undersampling** to balance the majority class (Human) with the minority class (AI).
+* [cite_start] **Features:** Implemented `TfidfVectorizer` (capped at 1000 features) to reduce dimensionality.
+* [cite_start] **Model:** Random Forest Classifier (`n_estimators=500`, `class_weight='balanced'`).
 
 ### 2. Chinese Pipeline
-* [cite_start]**Dataset:** Combined human translations from the **Tatoeba** dataset with a custom `manual_chinese_ai` dataset.
-* [cite_start]**Tokenization:** Integrated **Jieba** for specialized Chinese word segmentation.
-* [cite_start]**Model:** Random Forest Classifier trained on TF-IDF vectors.
+* [cite_start] **Dataset:** Combined human translations from the **Tatoeba** dataset with a custom `manual_chinese_ai` dataset.
+* [cite_start] **Tokenization:** Integrated **Jieba** for specialized Chinese word segmentation.
+* [cite_start] **Model:** Random Forest Classifier trained on TF-IDF vectors.
 
 ### Performance Metrics
 Precision was prioritized as the key metric to minimize False Positives (misclassifying human work as AI).
