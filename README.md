@@ -51,3 +51,5 @@ Precision was prioritized as the key metric to minimize False Positives (misclas
 ```bash
 git clone [https://github.com/ZuseGD/Bilingual-AI-Generated-Text-Detector.git](https://github.com/ZuseGD/Bilingual-AI-Generated-Text-Detector.git)
 cd bilingual-ai-detector
+```
+### 2. Unzip Training_Essay_Data.zip
